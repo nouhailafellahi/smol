@@ -1,11 +1,9 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-slug: {{ now.Format "2006-01-02" }}-{{ .Name | urlize }}
-type: posts
-draft: true
-categories:
-  - default
-tags:
-  - default
----
++++
+title = "{{ replace .Name "-" " " | title }}"
+date = {{ .Date }}
+
+type = posts
+draft = true
+
+tags = []
++++
