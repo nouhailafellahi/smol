@@ -5,8 +5,8 @@ html {
 :root { 
     --bgcolor: white; 
     --fontcolor: #444; 
-    --linkcolor: #00e; 
-    --visitedcolor: #551a8b; 
+    --linkcolor: #e52f79; 
+    --visitedcolor: #FFB6C1; 
     --precolor: #fff; 
     --prebgcolor: #000;
 }
@@ -15,8 +15,8 @@ html {
     :root { 
         --bgcolor: black; 
         --fontcolor: white; 
-        --linkcolor: #5bf; 
-        --visitedcolor: #ae5ee0; 
+        --linkcolor: #e52f79; 
+        --visitedcolor: #FFB6C1; 
         --precolor: #fff; 
         --prebgcolor: #383838;
     }
@@ -27,6 +27,7 @@ body{
     margin:40px auto;
     padding:0 10px;
     font:14px/1.5 monospace;
+    /*font:14px/1.5 Georgia;*/
     color:var(--fontcolor);
     background: var(--bgcolor)}
      
@@ -78,7 +79,8 @@ article{
 
 figcaption {
     color: #888; 
-    font: 12px/1.5 monospace; 
+    font: 12px/1.5 monospace;
+    /*font: 12px/1.5 Georgia;*/
     text-align: center;
 }
 
