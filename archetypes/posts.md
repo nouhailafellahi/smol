@@ -5,5 +5,5 @@ date = {{ .Date }}
 draft = true
 tags = []
 
-type = posts
+type = 'posts'
 +++
