@@ -11,9 +11,7 @@
 		{{ if .Paginator.Pages }}			
 		<ul>
 			{{ range .Paginator.Pages }}
-				<div class="post-summary">
-					{{ .Render "summary" }}
-				</div>
+				{{ .Render "summary" }}
 			{{ end }}
 		</ul>
 		{{ end }}
