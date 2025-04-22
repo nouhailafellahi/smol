@@ -8,15 +8,16 @@
 		</div>
 		{{ end }}
 
+		{{ if .Paginator.Pages }}			
 		<ul>
-
 			{{ range .Paginator.Pages }}
 				<div class="post-summary">
 					{{ .Render "summary" }}
 				</div>
 			{{ end }}
 		</ul>
-			
+		{{ end }}
+		
 	</main>
 {{ end }}
 
