@@ -90,7 +90,7 @@ figure {
 
 img {
     display: block; 
-    max-width: 100%; 
+    max-width: 90%; 
     height: auto; 
     margin: auto
 }
@@ -109,7 +109,8 @@ img {
 
 .summary-content > img {
     max-height: 180px;
+    max-width: 180px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 5px;
     border-radius: 5px;
 }
