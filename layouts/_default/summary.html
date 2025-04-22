@@ -1,19 +1,24 @@
 <article>
 	<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+	
 	<b><time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time></b>
+	
 	{{ range .Params.tags }}
 	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
 	{{ end }}
 	
-	{{ with .Params.defaultImg }}
-		<figure> 
+	<div class="summary-content">
+		{{ with .Params.defaultImg }}
 			<img src = "{{ . }}">
-			<figcaption>Just the generic image</figcaption>
-		</figure>		
-	{{ end }}
+		{{ end }}
 
-	{{ .Summary }}
-	{{ if .Truncated }}
-		<a href="{{ .Permalink }}">Read more...</a>
-	{{ end }}
+		<div>
+			{{ truncate 500 (.Content | plainify) }} 
+			{{ if .Truncated }} 
+				<a href="{{ .Permalink }}">Read more...</a> 
+			{{ end }}
+		</div>
+	</div>
+	
+	
 </article>
