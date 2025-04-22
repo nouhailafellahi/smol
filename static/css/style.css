@@ -94,3 +94,22 @@ img {
     height: auto; 
     margin: auto
 }
+
+.summary-content {
+    display: flex;
+    align-items: flex-start;
+    padding: 2px;    
+    padding-top: 10px;
+}
+
+.summary-content > div {
+    margin: 3%;
+    flex: 1;
+}
+
+.summary-content > img {
+    max-height: 180px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
