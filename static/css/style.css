@@ -25,7 +25,7 @@ html {
 body{
     max-width:800px;
     margin:40px auto;
-    padding:0 10px;
+    padding:0 5vh;
     font:14px/1.5 monospace;
     /*font:14px/1.5 Georgia;*/
     color:var(--fontcolor);
@@ -97,20 +97,46 @@ img {
 
 .summary-content {
     display: flex;
-    align-items: flex-start;
+    flex-flow: row;
     padding: 2px;    
     padding-top: 10px;
 }
 
 .summary-content > div {
-    margin: 3%;
     flex: 1;
 }
 
 .summary-content > img {
-    max-height: 180px;
+    max-height: 120px;
     max-width: 180px;
-    height: auto;
-    margin-right: 5px;
-    border-radius: 5px;
+    /*height: auto;*/
+    margin-right: 2%;
+    border-radius: 5%;
+}
+
+@media screen and (max-width: 700px) {
+  .summary-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+  }
+
+  .summary-content > img {
+    max-height: initial;
+    margin-right: initial;
+
+    display: block; 
+    height: auto; 
+
+    margin: auto;
+    max-width: 90%;
+  }
+
+  .summary-content > div {
+    text-align: center;
+    
+    margin: 10px auto;
+    max-width: 90%;
+}
 }
