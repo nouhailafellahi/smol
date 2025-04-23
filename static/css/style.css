@@ -92,7 +92,8 @@ img {
     display: block; 
     max-width: 90%; 
     height: auto; 
-    margin: auto
+    margin: auto;
+    border-radius: 2%;
 }
 
 .summary-content {
@@ -109,7 +110,7 @@ img {
 .summary-content > img {
     max-height: 120px;
     max-width: 180px;
-    /*height: auto;*/
+
     margin-right: 2%;
     border-radius: 5%;
 }
@@ -120,22 +121,17 @@ img {
     flex-flow: column nowrap;
     justify-content: center;
 
-  }
+}
 
-  .summary-content > img {
+.summary-content > img {
     max-height: initial;
-    margin-right: initial;
-
-    display: block; 
-    height: auto; 
+    max-width: 90%;
 
     margin: auto;
-    max-width: 90%;
-  }
+    border-radius: 2%;
+}
 
-  .summary-content > div {
-    text-align: center;
-    
+.summary-content > div {    
     margin: 10px auto;
     max-width: 90%;
 }
