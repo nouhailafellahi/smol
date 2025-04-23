@@ -13,7 +13,7 @@
 		{{ end }}
 
 		<div>
-			{{ truncate 500 (.Content | plainify) }} 
+			{{ truncate 350 (.Summary | plainify) }} 
 			{{ if .Truncated }} 
 				<a href="{{ .Permalink }}">Read more...</a> 
 			{{ end }}
