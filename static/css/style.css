@@ -1,31 +1,39 @@
+@font-face {
+    font-family: 'OpenSans', monospace, serif;
+    src: url('/fonts/OpenSans-Regular.ttf')
+}
+
 html {
     overflow-y: scroll
 }
 
 :root { 
-    --bgcolor: white; 
-    --fontcolor: #444; 
-    --linkcolor: #e52f79; 
-    --visitedcolor: #FFB6C1; 
+    --bgcolor: #ecdbe3; 
+    --fontcolor: #4a2738;
+    --linkcolor: #a50c50; 
+    --visitedcolor: #a50c50; 
     --precolor: #fff; 
-    --prebgcolor: #000;
+    --prebgcolor: #383838; 
+
 }
 
-@media (prefers-color-scheme: dark) { 
-    :root { 
-        --bgcolor: black; 
-        --fontcolor: white; 
-        --linkcolor: #e52f79; 
-        --visitedcolor: #FFB6C1; 
+@media (prefers-color-scheme: dark) {
+    :root{
+        --bgcolor: #321b26; 
+        --fontcolor: #ecdbe3; 
+        --linkcolor: #c67197; 
+        --visitedcolor: #c67197;
         --precolor: #fff; 
-        --prebgcolor: #383838;
+        --prebgcolor: #383838;  
     }
 }
+
 
 body{
     max-width:800px;
     margin:40px auto;
     padding:0 5vh;
+
     font:14px/1.5 monospace;
     /*font:14px/1.5 Georgia;*/
     color:var(--fontcolor);
@@ -43,7 +51,7 @@ body{
         color: var(--visitedcolor)
     }
     
-    h1,h2,h3{line-height:1.2
+    h1,h2,h3{line-height:1.2; font: monospace;
     
 }
 
@@ -105,6 +113,7 @@ img {
 
 .summary-content > div {
     flex: 1;
+    margin:auto;
 }
 
 .summary-content > img {
